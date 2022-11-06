@@ -1,0 +1,12 @@
+{
+	"extends": "@parcel/config-default",
+	"transformers": {
+		"inline-literal:*": ["...", "@parcel/transformer-inline-string"],
+		"*.{js,mjs,jsm,jsx,es6,cjs,ts,tsx}": [
+			"parcel-transformer-js-literals",
+			"@parcel/transformer-babel",
+			"@parcel/transformer-js",
+			"@parcel/transformer-react-refresh-wrap"
+		]
+	}
+}

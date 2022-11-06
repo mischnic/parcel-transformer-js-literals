@@ -1,0 +1,13 @@
+{
+	"private": true,
+	"name": "example",
+	"version": "0.0.0",
+	"scripts": {
+		"build": "parcel build index.js"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.0",
+		"parcel": "^2.0.0",
+		"parcel-transformer-js-literals": "*"
+	}
+}

@@ -1,0 +1,13 @@
+diff --git a/node_modules/@parcel/utils/lib/index.js b/node_modules/@parcel/utils/lib/index.js
+index 1ea0d36..b620873 100644
+--- a/node_modules/@parcel/utils/lib/index.js
++++ b/node_modules/@parcel/utils/lib/index.js
+@@ -35317,7 +35317,7 @@ async function $bc66accb63b05e9a$export$f074a8f9bef628fd({ bundle: bundle , bund
+         if ((entryBundle === null || entryBundle === void 0 ? void 0 : entryBundle.bundleBehavior) !== "inline") continue;
+         let packagedBundle = await getInlineBundleContents(entryBundle, bundleGraph);
+         let packagedContents = (packagedBundle.contents instanceof (0, $8C1kk$stream.Readable) ? await (0, $29bb96d8a6524ff0$export$f109d1c79a5ae5a1)(packagedBundle.contents) : packagedBundle.contents).toString();
+-        let inlineType = (0, (/*@__PURE__*/$parcel$interopDefault($812806c6461f2963$exports)))(entryBundle.getMainEntry()).meta.inlineType;
++        let inlineType = entryBundle.getMainEntry()?.meta.inlineType;
+         if (inlineType == null || inlineType === "string") {
+             var ref;
+             var ref1;

@@ -1,0 +1,13 @@
+{
+	"private": true,
+	"workspaces": [
+		"example",
+		"parcel-transformer-js-literals"
+	],
+	"scripts": {
+		"postinstall": "patch-package"
+	},
+	"dependencies": {
+		"patch-package": "^6.5.0"
+	}
+}

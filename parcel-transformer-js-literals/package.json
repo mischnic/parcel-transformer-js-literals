@@ -1,0 +1,18 @@
+{
+	"name": "parcel-transformer-js-literals",
+	"version": "0.1.0",
+	"license": "MIT",
+	"main": "index.js",
+	"dependencies": {
+		"@babel/parser": "^7.12.0",
+		"@babel/generator": "^7.12.0",
+		"@babel/traverse": "^7.12.0",
+		"@babel/types": "^7.12.0",
+		"@parcel/plugin": "2.7.0",
+		"semver": "^5.7.0"
+	},
+	"engines": {
+		"node": ">=12",
+		"parcel": "^2.0.0"
+	}
+}
